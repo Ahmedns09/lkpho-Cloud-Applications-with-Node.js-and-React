@@ -1,4 +1,4 @@
- // Import the HTTP module
+// Import the HTTP module
 const http = require('http');
 
 // Import the 'today' module
@@ -8,7 +8,7 @@ const today = require('./today');
 const requestListener = function (req, res) {
     res.writeHead(200); // Set the status code to 200 (OK)
     // Send the response with the current date from the 'today' module
-    res.end(`Hello, World! The date today is ${today.getDate()}`);
+    res.end(`Hello, World! The date today is ${today.getDate()} \n`);
 };
 
 // Define the port number
